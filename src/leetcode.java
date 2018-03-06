@@ -11,6 +11,8 @@ import java.util.Map;
  */
 public class leetcode {
     public static void main(String[] args) {
+
+        ///////////////twoSum 测试程序//////////////////
         int[] nums = new int[]{2, 2, 11, 15};
         int target = 4;
         int[] result = TwoSum.twoSum2(nums,target);
@@ -18,16 +20,6 @@ public class leetcode {
             System.out.println(result[0] + "  " + result[1]);
         }else{
             System.out.println("target 不存在");
-        }
-
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < 10; i++) {
-            map.put(i, i + 10);
-        }
-        System.out.println(map);
-
-        for (Integer i: map.keySet()) {
-            System.out.println("key:" + i + " value:" + map.get(i));
         }
     }
 }
